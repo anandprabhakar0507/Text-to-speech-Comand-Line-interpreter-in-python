@@ -1,0 +1,19 @@
+This software is property of AD | anand0507
+this software is developed as a part of of open
+source project and it is completely free for 
+use and no any commercial use should bre made.
+
+I Anand Prabhakar the creator of this software,
+would like to say not to sell and redistibute
+this software without my permission.
+This ap is creted with a goal to initiate the 
+curiosity in developers and scholars to support
+open source software development.
+
+I have tested this app on windows OS and as an 
+user you accept the pre-requisite as python 
+installed on your PC.
+
+For any queries please contact anandprabhakar0507@gmail.com
+
+Thank you
