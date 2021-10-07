@@ -5,8 +5,6 @@ import pyttsx3
 engine = pyttsx3.init()
 
 
-
-
 engine.say("Hello there..how are you..")
 engine.say("Please tell me your name by typing ")
 engine.runAndWait()
@@ -23,22 +21,22 @@ engine.say("If you are a boy then simply type b and for girl please type g")
 engine.runAndWait()
 gender = input(str("please write here b for boy or g for girl : "))
 
-if( gender == "B" or gender =="b"):
+if(gender == "B" or gender == "b"):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[0].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
     engine.stop()
-    
-elif( gender =="F" or gender =="f"):
+
+elif(gender == "F" or gender == "f"):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
     engine.stop()
-    
+
 else:
     engine = pyttsx3.init()
     engine.say("please enter a character g or b according to your gender")
@@ -46,9 +44,10 @@ else:
     engine.stop()
 
 
-
 os.system("color 0e")
-# this funcction checks for the dependencies for running this program 
+# this funcction checks for the dependencies for running this program
+
+
 def install(package):
     os.system("color 5f")
     engine = pyttsx3.init()
@@ -62,8 +61,7 @@ def install(package):
         engine.say("I am done now, it is ready now")
     engine.say("All dependencies are update and working")
     engine.runAndWait()
-    
-    
+
 
 engine.say("This is a Modern command line Interface created by Anand Prabhakar")
 engine.runAndWait()
@@ -71,21 +69,21 @@ engine.runAndWait()
 print("==========================================================================")
 print("\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar, Nalanda, Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n")
 print("==========================================================================")
+
+
 def main():
     engine = pyttsx3.init()
     engine.say("Please Enter the command you want to run")
     engine.runAndWait()
-    #it takes commands as input
+    # it takes commands as input
     command = input("\n\tEnter the command you want to execute : ")
-    
+
     print("Output after execution : \n")
     print("============================================================")
-    #it runs the command and show output
+    # it runs the command and show output
     commanding(command)
     print("============================================================")
-    
-    
-    
+
 
 def commanding(i):
     os.system("color 0e")
@@ -101,8 +99,7 @@ def commanding(i):
     main()
     return a
 
+
 if __name__ == "__main__":
     install('pyttsx3')
     main()
-    
-
