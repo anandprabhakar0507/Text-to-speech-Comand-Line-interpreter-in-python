@@ -13,25 +13,25 @@ engine.say(f"Hello {user}")
 engine.runAndWait()
 
 
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+voices = engine.getProperty("voices")
+engine.setProperty("voice", voices[1].id)
 
 
 engine.say("If you are a boy then simply type b and for girl please type g")
 engine.runAndWait()
 gender = input(str("please write here b for boy or g for girl : "))
 
-if(gender == "B" or gender == "b"):
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[0].id)
+if gender == "B" or gender == "b":
+    voices = engine.getProperty("voices")
+    engine.setProperty("voice", voices[0].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
     engine.stop()
 
-elif(gender == "F" or gender == "f"):
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)
+elif gender == "F" or gender == "f":
+    voices = engine.getProperty("voices")
+    engine.setProperty("voice", voices[1].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
@@ -53,11 +53,11 @@ def install(package):
     engine = pyttsx3.init()
     engine.say("let me check the voice dependencies before continuing")
     engine.runAndWait()
-    if hasattr(pip, 'main'):
+    if hasattr(pip, "main"):
         engine.say("I am installing the dependencies")
-        pip.main(['install', package])
+        pip.main(["install", package])
     else:
-        pip._internal.main(['install', package])
+        pip._internal.main(["install", package])
         engine.say("I am done now, it is ready now")
     engine.say("All dependencies are update and working")
     engine.runAndWait()
@@ -67,7 +67,9 @@ engine.say("This is a Modern command line Interface created by Anand Prabhakar")
 engine.runAndWait()
 
 print("==========================================================================")
-print("\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar, Nalanda, Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n")
+print(
+    "\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar, Nalanda, Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n"
+)
 print("==========================================================================")
 
 
@@ -101,5 +103,5 @@ def commanding(i):
 
 
 if __name__ == "__main__":
-    install('pyttsx3')
+    install("pyttsx3")
     main()
