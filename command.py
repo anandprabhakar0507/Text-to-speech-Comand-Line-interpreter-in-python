@@ -11,12 +11,10 @@ user = input("Please Enter Your name : ")
 engine.say("Hello {0}".format(user))
 engine.runAndWait()
 
-
 voices = engine.getProperty("voices")
 print(voices)
 print("these are available voices")
 engine.setProperty("voice", voices[1].id)
-
 
 engine.say("If you are a boy then simply type b and for girl please type g")
 engine.runAndWait()
@@ -44,7 +42,6 @@ else:
     engine.runAndWait()
     engine.stop()
 
-
 os.system("color 0e")
 # package installation
 
@@ -62,14 +59,19 @@ def install(package):
     engine.runAndWait()
 
 
-engine.say("This is a Modern command line Interface created by Anand Prabhakar")
+engine.say(
+    "This is a Modern command line Interface created by Anand Prabhakar")
 engine.runAndWait()
 
-print("==========================================================================")
+print(
+    "=========================================================================="
+)
 print(
     "\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar,Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n"
 )
-print("==========================================================================")
+print(
+    "=========================================================================="
+)
 
 
 def main():
