@@ -3,10 +3,6 @@ import os
 import pyttsx3
 
 engine = pyttsx3.init()
-
-
-
-
 engine.say("Hello there..how are you..")
 engine.say("Please tell me your name by typing ")
 engine.runAndWait()
@@ -16,6 +12,8 @@ engine.runAndWait()
 
 
 voices = engine.getProperty('voices')
+print(voices)
+print('these are available voices')
 engine.setProperty('voice', voices[1].id)
 
 
@@ -31,7 +29,7 @@ if( gender == "B" or gender =="b"):
     engine.runAndWait()
     engine.stop()
     
-elif( gender =="F" or gender =="f"):
+elif( gender =="G" or gender =="g"):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
     engine = pyttsx3.init()
@@ -48,7 +46,7 @@ else:
 
 
 os.system("color 0e")
-
+#package installation
 def install(package):
     os.system("color 5f")
     engine = pyttsx3.init()
@@ -70,6 +68,7 @@ print("=========================================================================
 print("\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar,Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n")
 print("==========================================================================")
 def main():
+    #main engine initiated
     engine = pyttsx3.init()
     engine.say("Please Enter the command you want to run")
     engine.runAndWait()
@@ -85,6 +84,7 @@ def main():
 
 def commanding(i):
     os.system("color 0e")
+    #local engine is initiated
     engine = pyttsx3.init()
     engine.say("You have entered the following command")
     engine.say(i)
