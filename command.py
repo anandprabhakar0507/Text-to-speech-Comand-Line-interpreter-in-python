@@ -21,22 +21,22 @@ engine.say("If you are a boy then simply type b and for girl please type g")
 engine.runAndWait()
 gender = input(str("please write here b for boy or g for girl : "))
 
-if( gender == "B" or gender =="b"):
+if(gender == "B" or gender == "b"):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[0].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
     engine.stop()
-    
-elif( gender =="G" or gender =="g"):
+
+elif(gender == "G" or gender == "g"):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
     engine = pyttsx3.init()
     engine.say("Thank you you are ready to go..")
     engine.runAndWait()
     engine.stop()
-    
+
 else:
     engine = pyttsx3.init()
     engine.say("please enter a character g or b according to your gender")
@@ -44,9 +44,10 @@ else:
     engine.stop()
 
 
-
 os.system("color 0e")
-#package installation
+# package installation
+
+
 def install(package):
     os.system("color 5f")
     engine = pyttsx3.init()
@@ -58,8 +59,7 @@ def install(package):
         pip._internal.main(['install', package])
     engine.say("All dependencies are update and working")
     engine.runAndWait()
-    
-    
+
 
 engine.say("This is a Modern command line Interface created by Anand Prabhakar")
 engine.runAndWait()
@@ -67,24 +67,24 @@ engine.runAndWait()
 print("==========================================================================")
 print("\n||\tCommand Line Interface CLI 1.0 By Anand Prabhakar,Bihar,India\t||\n||\tPowered by Python. \t\t\t\t\t\t||\n||\tjust learning..no commercial use.. \t\t\t\t||\n")
 print("==========================================================================")
+
+
 def main():
-    #main engine initiated
+    # main engine initiated
     engine = pyttsx3.init()
     engine.say("Please Enter the command you want to run")
     engine.runAndWait()
     command = input("\n\tEnter the command you want to execute : ")
-    
+
     print("Output after execution : \n")
     print("============================================================")
     commanding(command)
     print("============================================================")
-    
-    
-    
+
 
 def commanding(i):
     os.system("color 0e")
-    #local engine is initiated
+    # local engine is initiated
     engine = pyttsx3.init()
     engine.say("You have entered the following command")
     engine.say(i)
@@ -97,8 +97,7 @@ def commanding(i):
     main()
     return a
 
+
 if __name__ == "__main__":
     install('pyttsx3')
     main()
-    
-
